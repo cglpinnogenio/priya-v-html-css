@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link href="form.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  </head>  
+  <body>
+    <div class="center">
+       <div class="head">
+         Student Registration Form
+       </div>
+     <form>
+     <div class="labelstructure">
+      <label for="firstname">Firstname:</label>
+      <input type="text" id="First Name" name="firstname" placeholder="Firstname" class="inputcontainer" required/>
+     </div>
+     <div class="labelstructure">
+       <label for="middlename">Middlename:</label>
+       <input type="text" id="Middle Name" name="middlename" placeholder="Middlename" class="inputcontainer" required/>
+     </div>
+     <div class="labelstructure">
+      <label for="lastname">Lastname:</label>
+      <input type="text" id="Last Name" name="lastname" placeholder="Lastname" class="inputcontainer" required/>
+     </div>
+     <div class="labelstructure">
+      <label for="course" >Course :</label>
+       <select id="course" name="Course" class="styled-select" >
+        <option value="course">Course</option>
+        <option value="BBA">BBA</option>
+        <option value="BCA">BCA</option>
+       </select>
+     </div>
+     <div class="labelstructure">
+      <div>
+      <label for="gender">Gender:<label>
+      </div>
+      <input type="radio" id="male" name="gender" value="male" checked/>
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female"/>
+      <label for="female">Female</label>
+      <input type="radio" id="other" name="gender" value="other"/>
+      <label for="others">Other</label>
+     </div>
+     <div class="labelstructure">
+      <label for="phone">Phone:</label>
+      <input type="number" placeholder="+91" id="quantity" name="quantity" maxlength="10" class="inputcontainer" />
+     </div>
+     <div class="labelstructure">
+        <input type="number" placeholder="phone no." class="inputcontainer"/>
+     </div>
+     <div class="labelstructure">
+      <label for="caddress">Current Address:</label>
+      <textarea rows="5" cols="50" id="caddress" name="caddress" placeholder="Current Address" class="address"></textarea>
+     </div>
+     <div class="labelstructure">
+      <label for="email" class="bold-label">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter Email" class="inputcontainer"/>
+     </div>
+     <div class="labelstructure">
+      <label for="pwd" class="bold-label">Password</label>
+      <input type="password" id="pwd" name="pwd" class="inputcontainer" placeholder="Enter Password"/>
+     </div>
+     <div class="labelstructure">
+      <label for="rpwd" class="bold-label">Re-type password</label>
+      <input type="text" id="rpwd" name="rpwd" class="inputcontainer" placeholder="Retype Password"/>
+     </div>
+     <div class="labelstructure">
+        <input type="submit" value="Register" class="register"/>
+     </div>
+   </form>
+  </div>
+ </body>
+</html>

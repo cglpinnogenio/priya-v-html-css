@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 40px;
+}
+body {
+  background-color: rgb(173, 216, 230);
+  border: 7.2px solid rgb(248, 210, 233);
+  margin: auto;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.center {
+  max-width: 700px;
+  font-size: 0.3rem;
+  font-weight: 600;
+  margin: auto;
+  padding: 12px;
+}
+.head {
+  padding-top: 36px;
+  text-align: center;
+  border-bottom: 0.08rem solid #f1f1f1;
+  padding-bottom: 16px;
+  font-size: 0.48rem;
+  font-weight: 700;
+}
+.inputcontainer {
+  width: 100%;
+  padding: 9.2px;
+  background-color: #f1f1f1;
+  border: none;
+  margin-top: 3.2px;
+}
+.labelstructure {
+  margin-top: 24px;
+  margin-bottom: 3.2px;
+}
+.address {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: #f1f1f1;
+  padding-left: 12.8px;
+}
+.register {
+  color: white;
+  background-color: #56b35f;
+  text-align: center;
+  width: 96%;
+  border: none;
+  padding: 8px;
+  font-size: 0.32rem;
+  margin-top: 0.45rem;
+}
+
+input[type="radio"] {
+  accent-color: black;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+}
+.button:hover {
+  background-color: #3e8e41;
+}
+::placeholder {
+  font-size: 0.25rem;
+}
+.styled-select {
+  font-size: 0.2rem;
+}
+.bold-label {
+  font-weight: 800;
+}
