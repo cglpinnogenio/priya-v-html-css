@@ -1,121 +1,148 @@
 * {
   box-sizing: border-box;
 }
+.maincontainer {
+  max-width: 100%;
+}
 html {
-  font-size: 10px;
+  font-size: 64.5%;
 }
 body {
-    background-color: black;
+    background-color: #000000;
 }
-
 .navbar{
   display: flex;
   justify-content: space-between;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding-top: 20px;
-  font-size: 1.5rem;
-  
+  position: fixed;
+  width: 100%;
+} 
+.awardscontainer{
+  padding-left: 25px;
+  font-family: 'Arsenal';
+  font-weight: 400;
+  font-size: 5rem;
 }
 .navcenter {
  display: flex;
  justify-content: space-between;
-width: 40%;
+ width: 40%;
+ font-family: 'Arsenal';
+ font-weight: 400;
+ font-size: 2.5rem;
 }
-.awards{
-  display: flex;
-   font-size: 3rem;
-   padding-left: 25px;
+.competitionscontainer{
+  font-weight: 700; 
+  font-family: 'Inter';
 }
-.sign{
+.signcontainer{
   display: flex;
   font-style: italic; 
-  padding-right: 25px; 
-  font-size: 1.8rem;
+  padding-right: 50px; 
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 2.5rem;
 }
-.competitions{
-  font-weight: 700; 
-}
-  a {
+a {
     text-decoration: none;
-    color: white;
-  }
-  .center {
+    color: #FFFFFF;
+}
+a:hover {
+   font-weight: 700;
+}
+.centercontainer {
     display: flex;
     justify-content: space-between;
     margin-bottom: 200px;
-  }
-  .content {
-    color: white;
-    max-width: 630px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   padding-top: 200px;
+}
+h1 {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 4.8rem;
+    color: #FFFFFF;
+}
+p {
+    font-family: 'Inter';
+    font-weight: 300;
+    font-size: 1.8rem;
+    color: #FFFFFF;
+}
+.contentcontainer { 
+    max-width: 770px;
+    padding-top: 200px;
     padding-left: 20px;
-    font-size: 1.5rem;  
-  }
-  .picture {
+}
+.picturecontainer {
     padding-top: 200px;
     padding-right: 20px;
-  }
- .click {
+    width: 318px;
+    height: 459px;
+}
+.buttencontainer {
     border: none;
     background: transparent;
     display: block;
-    font-size: 1.5rem;
-    color: white;
     outline: none;
     text-decoration: underline; 
-   cursor: hand;
-   cursor: pointer; 
-  }
-  .back{
+    cursor: hand;
+    cursor: pointer; 
+    font-family: 'Inter';
+    font-weight: 300;
+    font-size: 1.8rem;
+    color: #FFFFFF;
+}
+.parentcontainer{
     background-color: #2b2929; 
-    justify-content: center;
-    align-items: center;
-    width: 650px;
-  }
-  .formcontainer {
+    max-width: 100%;
+    background-image: url("/Cam\ image.svg");
+    background-position: center;
+    padding: 50px 25px;
+}
+.formcontainer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
     padding-top: 50px;
-    background-color: #3d3c3c;
-    width: 90%;
-    font-size: 1.3rem;
-    opacity: 0.8;
-    background-image: url("/Cam\ image.svg");
-    background-position: center;
-  }
-  .heading {
-    color: white;
+    max-width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #E5E5E5;
+}
+  .formheading {
     margin-bottom: 50px;
-    }
-  .formfirst {
-   width: 42%;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 2rem;
+    color: #E5E5E5;
   }
+   .formfirst {
+    width: 40%; 
+  }  
   input {
     background: transparent;
     border: none;
-    border-bottom: 1px solid white;
+    border-bottom: 0.1rem solid rgba(229, 229, 229, 0.6);
     margin-bottom: 25px;
-}
-.style-select {
-  background: transparent;
+  }
+  .style-select {
+    background: transparent;
     border: none;
-    border-bottom: 1px solid white;
+    border-bottom: 0.1rem solid white;
     color: white;
-}
+  }
 .city {
   display: flex; 
- margin-bottom: 40px;
+  margin-bottom: 4rem;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.56);
 }
 .state {
   padding-left: 15px;
 }
 .country {
   display: flex;
- 
 }
 .zip {
   padding-left: 15px;
@@ -128,55 +155,79 @@ width: 40%;
 .descontainer{
   color: white;
   margin-bottom: 20px;
+  font-size: 1.8rem;
 }
 textarea{
-  border-radius: 1rem;
-  border: solid 2px gray;
   background: transparent;
+  box-sizing: border-box;
+  width: 340px;
+  height: 127px;
+  background: rgba(196, 196, 196, 0.04);
+  border: 0.1rem solid rgba(229, 229, 229, 0.51);
+  border-radius: 1rem;
 }
 .category{
   margin-top: 50px;
   margin-bottom: 35px;
-  width: 42%;
+  width: 207px;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: rgba(255, 255, 255, 0.56);
+}
+.categorycontainer{
+  width: 388px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
 }
 .pay {
   color: white;
   margin-bottom: 20px;
+  font-size: 1.8rem;
 }
 .terms {
   text-decoration: none;
-  color: rgb(120, 167, 211);
+  width: 165px;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 1.6rem;
+ color: #13AAFF;
 }
 .agree{
   color: white;
+  font-size: 1.6rem;
 }
 .go {
-display: flex;
-
+  display: flex;
 }
 .submit {
   color: white;
-  background-color: #4db857;
   text-align: center;
-  width: 130px;
   border: none;
-  padding: 0.5rem;
-  border-radius: 15px;
+  width: 197px;
+  height: 3.7rem;
+  background: #57BF37;
+  border-radius: 5rem;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 1.8rem;
 }
 .cancel {
   color: white;
-  background-color: black;
   text-align: center;
-  width: 130px;
-  border: none;
-  padding: 0.5rem;
-  border-radius: 15px;
+  width: 197px;
+  background: #000000;
+  border: 0.1rem solid rgba(229, 229, 229, 0.6);
+  border-radius: 5rem;
+  height: 3.7rem;
 }
 .can {
   padding-left: 8%;
 }
 .vertical {
-  border-left: 2px solid rgb(247, 244, 244);
+  border-left: 0.1rem solid rgba(229, 229, 229, 0.8);
   height: 100%;
   padding-left: 20px;
   width: 42%;
@@ -186,12 +237,32 @@ textarea:focus {
   outline: none;
 }
 .name {
-  width: 60%;
+  width: 342px;
 }
 .streetaddress {
   margin-bottom: 20px;
-  width: 50%;
+  width: 317.04px;
 }
 .street {
-  width: 40%;
+  width: 295px;
 }
+::placeholder {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.56);
+}
+input[type=checkbox] {
+  accent-color: #000000;
+}
+.card{
+  width: 388px;
+}
+.form-dropdown option{
+    background-color: black;
+}
+.opcontainer{
+  color: #000000;
+}
+ 
+

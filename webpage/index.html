@@ -6,79 +6,78 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Static Template</title>
     <link href="style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Arsenal' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
   </head>
   <body>
-    <div class="main">
+    <div class="maincontainer">
         <div class="navbar">
-          <div class="awards"><a href="#awards.asp">AWARDS</a></div>
+          <div class="awardscontainer"><a href="awards">AWARDS</a></div>
           <div class="navcenter">
-          <div class="about"><a href="#about.asp">ABOUT US</a></div>
-          <div><a href="#contact.asp">CONTACT</a></div>
-          <div class="competitions"><a href="#competition.asp">OUR COMPETITIONS</a></div>
+          <div><a href="about">ABOUT US</a></div>
+          <div><a href="contact">CONTACT</a></div>
+          <div class="competitionscontainer"><a href="competition">OUR COMPETITIONS</a></div>
+          </div>
+          <div class="signcontainer"><a href=signin>SIGN IN/SIGN UP</a></div>
         </div>
-        <div class="sign"><a href=#>SIGN IN/SIGN UP</a></div>
-        </div>
-        <div>
-        <div class="center">
-       <div class="content">
-       <h1>Welcome to the competition</h1>
-       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget ac, nec viverra pretium.
-          sit quisque mauris est sit tristique nunc mauris. Urna, malesuada elementum,
-         luctus at dui feugiat. Sollicitudin leo lacus sagittis purus nec phasellus dui.
-         scelerisque venenatis duis ornare. Ut tellus dignissim quam auctor hac morbi
-         enim, non. Metus, semper facilisi aliquet massa. Netus morbi elit quam pulvinar
-        blandit facilisis faucibus. Nunc pellentesque cursus pretium eget libero.</p>
-        <div>
-          <button type="button" class="click">Click to see more</button>
-        </div>
-        </div>
-        <div>
-          <img src="/Plant image.svg" alt="Plant" class="picture" width="10">
-        </div>
-      </div>
-      
-    </div>
-      <div class="back">
-        <form>
-       <div class="formcontainer">
-       <div class="formfirst">
-        <div class="heading">
-          Fill the Application
-        </div>
+        <div class="centercontainer">
+          <div class="contentcontainer">
+             <h1>Welcome to the competition</h1>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget ac, nec viverra pretium.
+             sit quisque mauris est sit tristique nunc mauris. Urna, malesuada elementum,
+             luctus at dui feugiat. Sollicitudin leo lacus sagittis purus nec phasellus dui.
+             scelerisque venenatis duis ornare. Ut tellus dignissim quam auctor hac morbi
+             enim, non. Metus, semper facilisi aliquet massa. Netus morbi elit quam pulvinar
+             blandit facilisis faucibus. Nunc pellentesque cursus pretium eget libero.</p>
+            <div>
+              <button type="button" class="buttencontainer">Click to see more</button>
+            </div>
+          </div>
           <div>
-            <input type="text" id="fullname" name="fullnmae" placeholder="Full Name" required class="name"/>
-            <input type="email" id="email" name="email" placeholder="Enter email Address" class="name"/>
-            <input type="number" id="number" name="number" placeholder="Phone Number" class="name"/>
-            <div><input type="text" id="address" name="address" placeholder="Street Address" class="streetaddress"/></div>
-            <div><input type="text" id="street address" name="street address" class="street"/></div>
-            <div class="city">
-              <div>
-              <select id="city" name="city" class="style-select">
-              <option value="disabled selected">City</option>
-              <option value="chennai">Chennai</option>
-              <option value="Trivandrum">Trivandrum</option>
-              <option value="Kolkotha">Kolkotha</option>
-              <option value="Bangaluru">Bangaluru</option>
-              </select>
-              </div>
-              <div class="state">
-              <select id="state" name="state" class="style-select">
-              <option value="disabled selected">State</option>
-              <option value="Kerala">Kerala</option>
-              <option value="TN">TN</option>
-              <option value="Karnataka">Karnataka</option>
-              <option value="Bengal">Bengal</option>
-              </select>
-              </div>
-              </div>
-              <div class="country">
-              <div>
-                <select id="Country" name="Country" class="style-select">
-                <option value="disabled selected">Country</option>
-                <option value="India">India</option>
-                </select>
+            <img src="/Plant image.svg" alt="Plant" class="picturecontainer ">
+          </div>
+        </div>
+        <div class="parentcontainer">
+          <form>
+            <div class="formcontainer">
+              <div class="formfirst">
+                <div class="formheading">
+                  Fill the Application
                 </div>
-                <div class="zip"><input type="text" id="zipcode" name="zipcode" placeholder="Zip Code" class="zip"/></div>
+                <div>
+                <input type="text" id="fullname" name="fullnmae" placeholder="Full Name" required class="name"/>
+                <input type="email" id="email" name="email" placeholder="Enter email Address" class="name"/>
+                <input type="number" id="number" name="number" placeholder="Phone Number" class="name"/>
+                <div><input type="text" id="address" name="address" placeholder="Street Address" class="streetaddress"/></div>
+                <div><input type="text" id="street address" name="street address" class="street"/></div>
+                <div class="city">
+                   <div>
+                   <select id="city" name="city" class="style-select">
+                   <option value="selected" class="opcontainer">City</option>
+                   <option value="chennai" class="opcontainer">Chennai</option>
+                   <option value="Trivandrum" class="opcontainer">Trivandrum</option>
+                   <option value="Kolkotha" class="opcontainer">Kolkotha</option>
+                   <option value="Bangaluru" class="opcontainer">Bangaluru</option>
+                   </select>
+                   </div>
+                   <div class="state">
+                   <select id="state" name="state" class="style-select">
+                   <option value="selected" class="opcontainer">State</option>
+                   <option value="Kerala" class="opcontainer">Kerala</option>
+                   <option value="TN" class="opcontainer">TN</option>
+                   <option value="Karnataka" class="opcontainer">Karnataka</option>
+                   <option value="Bengal" class="opcontainer">Bengal</option>
+                   </select>
+                  </div>
+                </div>
+                <div class="country">
+                  <div>
+                    <select id="Country" name="Country" class="style-select">
+                    <option value="selected" class="opcontainer">Country</option>
+                    <option value="India"class="opcontainer">India</option>
+                    </select>
+                  </div>
+                  <div class="zip"><input type="text" id="zipcode" name="zipcode" placeholder="Zip Code" class="zip"/></div>
                 </div>
                 <div class="gender">
                 <input type="radio" id="male" name="gender" value="male" checked/>
@@ -86,45 +85,42 @@
                 <input type="radio" id="female" name="gender" value="female"/>
                 <label for="female">Female</label>
                 </div>
-            </div>
-       </div>
-          <div class="vertical">
-            <div class="descontainer">
-               Description
-            </div>
-            <div class="desarea">
-            <textarea rows="5" cols="30" id="Description" name="Description"></textarea>
-            </div>
-            <div class="category">
-              <select id="category" name="category" class="style-select">
-              <option value="disabled selected">Photo Contest Category</option>
-              <option value="Nature">Nature</option>
-              </select>
-              </div>
-              <div class="pay">
-                Payment Option
-              </div>
-              <div>
-                <div><input type="text" id="card" name="card" placeholder="Name on card*" class="name" /></div>
-            <div><input type="number" id="creditcard" name="creditcard" placeholder="Credit Card*" class="name"/></div>
-              </div>
-              <div><a href="#terms and conditions.asp" class="terms">Terms and Conditions</a></div>
-              <div>
-                <input type="checkbox" id="agree" name="agree" value="agree" checked>
-  <label for="agree" class="agree"> I agree</label>
-              </div>
-              <div class="go">
-              <div>
-                <input type="submit" value="Submit" class="submit"/>
-              </div>
-              <div class="can">
-                <input type="submit" value="Cancel" class="cancel"/>
-              </div>
               </div>
             </div>
-       </div>
-       </form>
-      </div>   
+              <div class="vertical">
+                <div class="descontainer">
+                   Description
+                </div>
+                <div class="desarea">
+                <textarea rows="5" cols="30" id="Description" name="Description"></textarea>
+                </div>
+                <div class="category">
+                  <select id="category" name="category" class="categorycontainer">
+                  <option value="disabled selected" class="opcontainer">Photo Contest Category</option>
+                  <option value="Nature" class="opcontainer">Nature</option>
+                  </select>
+                </div>
+                <div class="pay">
+                   Payment Option
+                </div>
+                <input type="text" id="card" name="card" placeholder="Name on card*" class="card" />
+                <input type="number" id="creditcard" name="creditcard" placeholder="Credit Card*" class="card"/>
+                <div><a href="terms and conditions" class="terms">Terms and Conditions</a></div>
+                <div>
+                <input type="checkbox" id="agree" name="agree" value="agree" checked />
+                <label for="agree" class="agree"> I agree</label>
+                </div>
+                <div class="go">
+                <div>
+                  <input type="submit" value="Submit" class="submit"/>
+                </div>
+                <div class="can">
+                  <input type="submit" value="Cancel" class="cancel"/>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>   
     </div>
   </body>
 </html>
