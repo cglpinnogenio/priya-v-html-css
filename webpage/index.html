@@ -28,28 +28,29 @@
          scelerisque venenatis duis ornare. Ut tellus dignissim quam auctor hac morbi
          enim, non. Metus, semper facilisi aliquet massa. Netus morbi elit quam pulvinar
         blandit facilisis faucibus. Nunc pellentesque cursus pretium eget libero.</p>
+        <div>
+          <button type="button" class="click">Click to see more</button>
         </div>
-        <div class="picture">
-          <img src="desktop/images/plant.jpeg" alt="Plant" width="100" height="300">
+        </div>
+        <div>
+          <img src="/Plant image.svg" alt="Plant" class="picture" width="10">
         </div>
       </div>
-      <div>
-        <button type="button" class="click">Click to see more</button>
-      </div>
+      
     </div>
       <div class="back">
         <form>
        <div class="formcontainer">
-       <div>
+       <div class="formfirst">
         <div class="heading">
           Fill the Application
         </div>
           <div>
-            <div><input type="text" id="fullname" name="fullnmae" placeholder="Full Name" required/></div>
-            <div><input type="email" id="email" name="email" placeholder="Enter email Address" /></div>
-            <div><input type="number" id="number" name="number" placeholder="Phone Number" /></div>
-            <div><input type="text" id="address" name="address" placeholder="Street Address" /></div>
-            <div><input type="text" id="street address" name="street address" /></div>
+            <input type="text" id="fullname" name="fullnmae" placeholder="Full Name" required class="name"/>
+            <input type="email" id="email" name="email" placeholder="Enter email Address" class="name"/>
+            <input type="number" id="number" name="number" placeholder="Phone Number" class="name"/>
+            <div><input type="text" id="address" name="address" placeholder="Street Address" class="streetaddress"/></div>
+            <div><input type="text" id="street address" name="street address" class="street"/></div>
             <div class="city">
               <div>
               <select id="city" name="city" class="style-select">
@@ -60,7 +61,7 @@
               <option value="Bangaluru">Bangaluru</option>
               </select>
               </div>
-              <div>
+              <div class="state">
               <select id="state" name="state" class="style-select">
               <option value="disabled selected">State</option>
               <option value="Kerala">Kerala</option>
@@ -77,7 +78,7 @@
                 <option value="India">India</option>
                 </select>
                 </div>
-                <div><input type="text" id="zipcode" name="zipcode" placeholder="Zip Code" /></div>
+                <div class="zip"><input type="text" id="zipcode" name="zipcode" placeholder="Zip Code" class="zip"/></div>
                 </div>
                 <div class="gender">
                 <input type="radio" id="male" name="gender" value="male" checked/>
@@ -87,7 +88,7 @@
                 </div>
             </div>
        </div>
-          <div>
+          <div class="vertical">
             <div class="descontainer">
                Description
             </div>
@@ -95,7 +96,7 @@
             <textarea rows="5" cols="30" id="Description" name="Description"></textarea>
             </div>
             <div class="category">
-              <select id="category" name="category" class="style-select" >
+              <select id="category" name="category" class="style-select">
               <option value="disabled selected">Photo Contest Category</option>
               <option value="Nature">Nature</option>
               </select>
@@ -104,8 +105,8 @@
                 Payment Option
               </div>
               <div>
-                <div><input type="text" id="card" name="card" placeholder="Name on card*" /></div>
-            <div><input type="number" id="creditcard" name="creditcard" placeholder="Credit Card*" /></div>
+                <div><input type="text" id="card" name="card" placeholder="Name on card*" class="name" /></div>
+            <div><input type="number" id="creditcard" name="creditcard" placeholder="Credit Card*" class="name"/></div>
               </div>
               <div><a href="#terms and conditions.asp" class="terms">Terms and Conditions</a></div>
               <div>
@@ -116,7 +117,7 @@
               <div>
                 <input type="submit" value="Submit" class="submit"/>
               </div>
-              <div>
+              <div class="can">
                 <input type="submit" value="Cancel" class="cancel"/>
               </div>
               </div>
