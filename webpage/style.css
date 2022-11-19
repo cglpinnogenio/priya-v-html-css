@@ -1,14 +1,15 @@
 * {
   box-sizing: border-box;
 }
-.maincontainer {
-  max-width: 100%;
-}
 html {
   font-size: 64.5%;
 }
 body {
     background-color: #000000;
+    max-width: 100%;
+}
+.maincontainer {
+  max-width: 100%;
 }
 .navbar{
   display: flex;
@@ -53,6 +54,7 @@ a:hover {
 .centercontainer {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 200px;
 }
 h1 {
@@ -93,18 +95,18 @@ p {
 }
 .parentcontainer{
     background-color: #2b2929; 
-    max-width: 100%;
+    width: 100%;
     background-image: url("/Cam\ image.svg");
     background-position: center;
     padding: 50px 25px;
 }
 .formcontainer {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-top: 50px;
-    max-width: 100%;
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.1);
     color: #E5E5E5;
 }
