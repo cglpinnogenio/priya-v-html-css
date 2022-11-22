@@ -10,11 +10,10 @@
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
   </head>
   <body>
-    <div class="maincontainer">
         <div class="navbar">
           <div class="awardscontainer"><a href="awards">AWARDS</a></div>
           <div class="navcenter">
-          <div><a href="about">ABOUT US</a></div>
+          <div class="aboutcontainer"><a href="about">ABOUT US</a></div>
           <div><a href="contact">CONTACT</a></div>
           <div class="competitionscontainer"><a href="competition">OUR COMPETITIONS</a></div>
           </div>
@@ -37,17 +36,17 @@
             <img src="/Plant image.svg" alt="Plant" class="picturecontainer ">
           </div>
         </div>
-        <div class="parentcontainer">
-          <form>
-            <div class="formcontainer">
+      <div class="parentcontainer">
+        <form>
+          <div class="formcontainer">
               <div class="formfirst">
                 <div class="formheading">
                   Fill the Application
                 </div>
                 <div>
-                <input type="text" id="fullname" name="fullnmae" placeholder="Full Name" required class="name"/>
-                <input type="email" id="email" name="email" placeholder="Enter email Address" class="name"/>
-                <input type="number" id="number" name="number" placeholder="Phone Number" class="name"/>
+                <div><input type="text" id="fullname" name="fullnmae" placeholder="Full Name" required class="name"/></div>
+                <div><input type="email" id="email" name="email" placeholder="Enter email Address" class="name"/></div>
+                <div><input type="number" id="number" name="number" placeholder="Phone Number" class="name"/></div>
                 <div><input type="text" id="address" name="address" placeholder="Street Address" class="streetaddress"/></div>
                 <div><input type="text" id="street address" name="street address" class="street"/></div>
                 <div class="city">
@@ -87,7 +86,7 @@
                 </div>
               </div>
             </div>
-              <div class="vertical">
+          <div class="formsecond">
                 <div class="descontainer">
                    Description
                 </div>
@@ -103,8 +102,8 @@
                 <div class="pay">
                    Payment Option
                 </div>
-                <input type="text" id="card" name="card" placeholder="Name on card*" class="card" />
-                <input type="number" id="creditcard" name="creditcard" placeholder="Credit Card*" class="card"/>
+                <div><input type="text" id="card" name="card" placeholder="Name on card*" class="card" /></div>
+                <div><input type="number" id="creditcard" name="creditcard" placeholder="Credit Card*" class="card"/></div>
                 <div><a href="terms and conditions" class="terms">Terms and Conditions</a></div>
                 <div>
                 <input type="checkbox" id="agree" name="agree" value="agree" checked />
@@ -117,10 +116,9 @@
                 <div class="can">
                   <input type="submit" value="Cancel" class="cancel"/>
                 </div>
-              </div>
-            </div>
-          </form>
-        </div>   
-    </div>
+          </div>
+        </div>
+      </form>
+    </div>   
   </body>
 </html>
