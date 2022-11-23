@@ -5,10 +5,14 @@ html {
   font-size: 64.5%;
 }
 body {
-    background-color: #000000;
-    margin: 0;
-    max-width: 1500px;
+  background-color: #000000;
+  margin: 0;
+    /* max-width: 1500px; */
 }
+/* .maincontainer{
+  display: flex;
+  justify-content: center; 
+}  */
 .navbar{
   display: flex;
   justify-content: space-between;
@@ -21,14 +25,17 @@ body {
   font-family: 'Arsenal';
   font-weight: 400;
   font-size: 4.5rem;
+  align-self: flex-end;
 }
 .navcenter {
- display: flex;
- justify-content: space-between;
- width: 40%;
- font-family: 'Arsenal';
- font-weight: 400;
- font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 40%;
+  font-family: 'Arsenal';
+  font-weight: 400;
+  font-size: 2rem;
+  align-self: flex-end;
 }
 .aboutcontainer{
   padding-right: 1rem;;
@@ -45,105 +52,112 @@ body {
   font-family: 'Inter';
   font-weight: 400;
   font-size: 2rem;
+  align-self: flex-end;
 }
 a {
-    text-decoration: none;
-    color: #FFFFFF;
+  text-decoration: none;
+  color: #FFFFFF;
 }
 a:hover {
-   font-weight: 700;
+  font-weight: 700;
 }
 .centercontainer {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 200px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 200px;
 }
 h1 {
-    font-family: 'Inter';
-    font-weight: 600;
-    font-size: 4.8rem;
-    color: #FFFFFF;
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 4.8rem;
+  color: #FFFFFF;
 }
 p {
-    font-family: 'Inter';
-    font-weight: 300;
-    font-size: 1.8rem;
-    color: #FFFFFF;
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: #FFFFFF;
 }
 .contentcontainer { 
-    max-width: 770px;
-    padding-top: 200px;
-    padding-left: 20px;
+  max-width: 770px;
+  padding-top: 200px;
+  padding-left: 20px;
 }
 .picturecontainer {
-    padding-top: 200px;
-    padding-right: 2.5rem;
-    width: 318px;
-    height: 459px;
+  padding-top: 200px;
+  padding-right: 2.5rem;
+  width: 318px;
+  height: 459px;
 }
 .buttencontainer {
-    border: none;
-    background: transparent;
-    display: block;
-    outline: none;
-    text-decoration: underline; 
-    cursor: hand;
-    cursor: pointer; 
-    font-family: 'Inter';
-    font-weight: 300;
-    font-size: 1.8rem;
-    color: #FFFFFF;
+  border: none;
+  background: transparent;
+  display: block;
+  outline: none;
+  text-decoration: underline; 
+  cursor: hand;
+  cursor: pointer; 
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: #FFFFFF;
 }
 .parentcontainer{
-    background-color: #2b2929; 
-    width: 100%;
-    min-width: 400px;
-    background-image: url("/Cam\ image.svg");
-    background-position: center;
-    padding: 5rem 2.5rem;
+  background-color: #2b2929; 
+  width: 100%;
+  min-width: 400px;
+  background-image: url("/Cam\ image.svg");
+  background-position: center;
+  padding: 5rem 2.5rem;
 }
 .formcontainer {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-top: 50px;
-    width: 100%;
-    min-width: 400px;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: #E5E5E5;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  min-width: 400px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #E5E5E5;
 }
-  .formheading {
-    margin-bottom: 50px;
-    font-family: 'Inter';
-    font-weight: 600;
-    font-size: 2rem;
-    color: #E5E5E5;
-  }
-   .formfirst {
-     width: 40%;
-     min-width: 400px;
-  }  
-  .formsecond {
-    border-left: 0.1rem solid rgba(229, 229, 229, 0.8);
-    height: 100%;
-    padding-left: 20px;
-    width: 40%;
-    min-width: 400px;
-  }
-  input {
-    background: transparent;
-    border: none;
-    border-bottom: 0.1rem solid rgba(229, 229, 229, 0.6);
-    margin-bottom: 25px;
-  }
-  .style-select {
-    background: transparent;
-    border: none;
-    border-bottom: 0.1rem solid white;
-    color: white;
-  }
+.formheading {
+  margin-bottom: 50px;
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 2rem;
+  color: #E5E5E5;
+  padding-top: 50px; 
+}
+.formfirst {
+  min-width: 400px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 50%; 
+  padding-left: 5rem;
+}  
+.formsecond {
+  border-left: 1px solid rgba(229, 229, 229, 0.8);
+  height: 100%;
+  padding-left: 20px;
+  min-width: 400px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 50%; 
+}
+input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(229, 229, 229, 0.6);
+  margin-bottom: 25px;
+  color: white;
+}
+.style-select {
+  background: transparent;
+  border: none;
+  border-bottom: 0.1rem solid white;
+  color: white;
+}
 .city {
   display: flex; 
   margin-bottom: 4rem;
@@ -151,25 +165,41 @@ p {
   font-weight: 400;
   font-size: 18px;
   color: rgba(255, 255, 255, 0.56);
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  max-width: 2rem; 
 }
 .state {
   padding-left: 15px;
 }
 .country {
   display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 30%;
+  max-width: 2rem; 
 }
 .zip {
-  padding-left: 15px;
-  width: 50%;
+  padding-left: 15px; 
 }
 .gender {
   color: white;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.56);
 }
-
+input[type=radio] {
+  width: 1.7rem;
+  height: 1.7rem;
+}
 .descontainer{
   color: white;
   margin-bottom: 20px;
   font-size: 1.8rem;
+  padding-top: 50px;
 }
 textarea{
   background: transparent;
@@ -178,6 +208,7 @@ textarea{
   background: rgba(196, 196, 196, 0.04);
   border: 0.1rem solid rgba(229, 229, 229, 0.51);
   border-radius: 1rem;
+  color: #FFFFFF;
 }
 .category{
   margin-top: 50px;
@@ -206,7 +237,7 @@ textarea{
   font-family: 'Inter';
   font-weight: 400;
   font-size: 1.6rem;
- color: #13AAFF;
+  color: #13AAFF;
 }
 .agree{
   color: white;
@@ -214,6 +245,10 @@ textarea{
 }
 .go {
   display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  max-width: 2rem;
 }
 .submit {
   color: white;
@@ -232,9 +267,10 @@ textarea{
   text-align: center;
   width: 170px;
   background: #000000;
-  border: 0.1rem solid rgba(229, 229, 229, 0.6);
+  border: 1px solid rgba(229, 229, 229, 0.6);
   border-radius: 5rem;
   height: 3rem;
+  font-size: 1.8rem;
 }
 .can {
   padding-left: 6%;
@@ -272,5 +308,6 @@ input[type=checkbox] {
 .opcontainer{
   color: #000000;
 }
+
  
 
