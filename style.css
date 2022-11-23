@@ -6,32 +6,38 @@ html {
 }
 body {
   background-color: #000000;
-  margin: 0;
-    /* max-width: 1500px; */
-}
-/* .maincontainer{
-  display: flex;
+  max-width: 1500px;
+  display: flex; 
   justify-content: center; 
-}  */
+  margin: 0;
+}
+ .maincontainer{
+  max-width: 1500px;
+  width: 100%;
+}      
 .navbar{
   display: flex;
   justify-content: space-between;
   padding-top: 20px;
-  position: fixed;
-  width: 100%; 
+  position: fixed; 
+  width: 100%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100%;
+  max-width: 1500px;
+   height: 6.5rem;
 } 
 .awardscontainer{
   padding-left: 25px;
   font-family: 'Arsenal';
   font-weight: 400;
   font-size: 4.5rem;
-  align-self: flex-end;
+  justify-content: flex-end;
 }
 .navcenter {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  width: 40%;
+  gap: 4rem;
   font-family: 'Arsenal';
   font-weight: 400;
   font-size: 2rem;
@@ -65,7 +71,12 @@ a:hover {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 200px;
+  padding-bottom: 20rem;
+  padding-top: 20rem;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100%;
+  max-width: 1500px;
 }
 h1 {
   font-family: 'Inter';
@@ -81,11 +92,9 @@ p {
 }
 .contentcontainer { 
   max-width: 770px;
-  padding-top: 200px;
   padding-left: 20px;
 }
 .picturecontainer {
-  padding-top: 200px;
   padding-right: 2.5rem;
   width: 318px;
   height: 459px;
@@ -107,7 +116,7 @@ p {
   background-color: #2b2929; 
   width: 100%;
   min-width: 400px;
-  background-image: url("/Cam\ image.svg");
+  background-image: url("Assets/Cam\ image.svg");
   background-position: center;
   padding: 5rem 2.5rem;
 }
@@ -156,19 +165,20 @@ input {
   background: transparent;
   border: none;
   border-bottom: 0.1rem solid white;
-  color: white;
+  width: 130px;
+  color: rgb(175, 173, 173);
 }
 .city {
   display: flex; 
   margin-bottom: 4rem;
   font-family: 'Inter';
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.8rem;
   color: rgba(255, 255, 255, 0.56);
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: auto;
-  max-width: 2rem; 
+  max-width: 13rem; 
 }
 .state {
   padding-left: 15px;
@@ -178,10 +188,11 @@ input {
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 30%;
-  max-width: 2rem; 
+  max-width: 13rem; 
 }
 .zip {
   padding-left: 15px; 
+  width: 7rem;
 }
 .gender {
   color: white;
@@ -194,6 +205,7 @@ input {
 input[type=radio] {
   width: 1.7rem;
   height: 1.7rem;
+  background-color: #000000;
 }
 .descontainer{
   color: white;
@@ -217,7 +229,7 @@ textarea{
   font-family: 'Inter';
   font-weight: 400;
   font-size: 1.8rem;
-  color: rgba(255, 255, 255, 0.56);
+  color: rgb(175, 173, 173);
 }
 .categorycontainer{
   width: 70%;
@@ -308,6 +320,12 @@ input[type=checkbox] {
 .opcontainer{
   color: #000000;
 }
+.genderlabel{
+ text-align: center;
+ margin-top: 1px;
+ margin-bottom: 1px;
+}
+
 
  
 
