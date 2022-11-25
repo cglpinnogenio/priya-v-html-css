@@ -10,18 +10,18 @@
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
   </head>
   <body>
-    <div class="maincontainer">
+    <div class="main-container">
         <div class="navbar">
-          <div class="awardscontainer"><a "#awards">AWARDS</a></div>
+          <div class="awards-container"><a "awards">AWARDS</a></div>
           <div class="navcenter">
-          <div class="aboutcontainer"><a "#about">ABOUT US</a></div>
-          <div><a "#contact">CONTACT</a></div>
-          <div class="competitionscontainer"><a "#competition">OUR COMPETITIONS</a></div>
+          <div class="about-container"><a "about">ABOUT US</a></div>
+          <div><a "contact">CONTACT</a></div>
+          <div class="competitions-container"><a "competition">OUR COMPETITIONS</a></div>
           </div>
-          <div class="signcontainer"><a "#signin">SIGN IN/SIGN UP</a></div>
+          <div class="sign-container"><a "signin">SIGN IN/SIGN UP</a></div>
         </div>
-        <div class="centercontainer">
-          <div class="contentcontainer">
+        <div class="center-container">
+          <div class="content-container">
              <h1>Welcome to the competition</h1>
              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget ac, nec viverra pretium.
              sit quisque mauris est sit tristique nunc mauris. Urna, malesuada elementum,
@@ -30,16 +30,16 @@
              enim, non. Metus, semper facilisi aliquet massa. Netus morbi elit quam pulvinar
              blandit facilisis faucibus. Nunc pellentesque cursus pretium eget libero.</p>
             <div>
-              <button type="button" class="buttencontainer">Click to see more</button>
+              <button type="button" class="butten-container">Click to see more</button>
             </div>
           </div>
           <div>
-            <img src="Assets/Plant image.svg" alt="Plant" class="picturecontainer ">
+            <img src="Assets/Plant image.svg" alt="Plant" class="picture-container ">
           </div>
         </div>
-        <div class="parentcontainer">
+        <div class="parent-container">
           <form>
-            <div class="formcontainer">
+            <div class="form-container">
               <div class="formfirst">
                 <div class="formheading">
                   Fill the Application
@@ -53,51 +53,49 @@
                 <div class="city">
                    <div>
                    <select id="city" name="city" class="style-select">
-                   <option value="selected" class="opcontainer">City</option>
-                   <option value="chennai" class="opcontainer">Chennai</option>
-                   <option value="Trivandrum" class="opcontainer">Trivandrum</option>
-                   <option value="Kolkotha" class="opcontainer">Kolkotha</option>
-                   <option value="Bangaluru" class="opcontainer">Bangaluru</option>
+                   <option value="selected">City</option>
+                   <option value="chennai">Chennai</option>
+                   <option value="Trivandrum">Trivandrum</option>
+                   <option value="Kolkotha">Kolkotha</option>
+                   <option value="Bangaluru">Bangaluru</option>
                    </select>
                    </div>
                    <div class="state">
                    <select id="state" name="state" class="style-select">
-                   <option value="selected" class="opcontainer">State</option>
-                   <option value="Kerala" class="opcontainer">Kerala</option>
-                   <option value="TN" class="opcontainer">TN</option>
-                   <option value="Karnataka" class="opcontainer">Karnataka</option>
-                   <option value="Bengal" class="opcontainer">Bengal</option>
+                   <option value="selected">State</option>
+                   <option value="Kerala">Kerala</option>
+                   <option value="TN">TN</option>
+                   <option value="Karnataka">Karnataka</option>
+                   <option value="Bengal">Bengal</option>
                    </select>
                   </div>
                 </div>
                 <div class="country">
                   <div>
                     <select id="Country" name="country" class="style-select">
-                    <option value="selected" class="opcontainer">Country</option>
-                    <option value="India"class="opcontainer">India</option>
+                    <option value="selected">Country</option>
+                    <option value="India">India</option>
                     </select>
                   </div>
-                  <div class="zip"><input type="text" id="zipcode" name="zipcode" placeholder="Zip Code" class="zip"/></div>
+                 <div class="zipbottom"><input type="number" id="zipcode" name="zipcode" placeholder="Zip Code" class="zip"></div>
                 </div>
                 <div class="gender">
                 <input type="radio" id="male" name="gender" value="male" checked/>
-                <label for="male" class="genderlabel">Male</label>
-                <input type="radio" id="female" name="gender" value="female"/>
-                <label for="female" class="genderlabel">Female</label>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" class="femalebuttons"/>
+                <label for="female">Female</label>
                 </div>
               </div>
             </div>
             <div class="formsecond">
-                <div class="descriptioncontainer">
+                <div class="description-container">
                    Description
                 </div>
-                <div class="desarea">
-                <textarea rows="5" cols="30" id="Description" name="Description"></textarea>
-                </div>
+                <textarea rows="6" cols="25" id="Description" name="Description"></textarea>
                 <div class="category">
-                  <select id="category" name="category" class="categorycontainer">
-                  <option value="disabled selected" class="opcontainer">Photo Contest Category</option>
-                  <option value="Nature" class="opcontainer">Nature</option>
+                  <select id="category" name="category" class="category-container">
+                  <option value="disabled selected">Photo Contest Category</option>
+                  <option value="Nature">Nature</option>
                   </select>
                 </div>
                 <div class="pay">
@@ -105,10 +103,10 @@
                 </div>
                 <div><input type="text" id="card" name="card" placeholder="Name on card*" class="card" /></div>
                 <div><input type="number" id="creditcard" name="creditcard" placeholder="Credit Card*" class="card"/></div>
-                <div><a "#termsandconditions" class="terms">Terms and Conditions</a></div>
+                <div><a "termsandconditions" class="terms">Terms and Conditions</a></div>
                 <div>
                 <input type="checkbox" id="agree" name="agree" value="agree" checked />
-                <label for="agree" class="agree"> I agree</label>
+                <label for="agree" class="agree"> I Agree</label>
                 </div>
                 <div class="go">
                 <div>
